@@ -1,5 +1,10 @@
 %% Program that can Filter experiments with Baker Code : Kindat 5963
 %  Which possibly has low altitude data < 100 km
+%  Input: Date range, kindat==5963, and Instrument code=61
+%  Output: Names of files that match the particular kindat number - 5963
+
+%% Issues
+	% This should be converted into a function
 
 clear;
 
@@ -30,6 +35,3 @@ expFileArray = getExperimentFilesWeb(cgiurl,expArray(i).id);
 end;
 
 
-
-% Listing down the parameters in the files\
-%parmArray = getParametersWeb(cgiurl, expFileArray(1).name);

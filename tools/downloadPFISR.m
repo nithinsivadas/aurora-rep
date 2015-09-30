@@ -9,8 +9,12 @@ function [ Data, DateNumBeg, DateNumEnd ] = downloadPFISR( DateBeg, DateEnd, Dat
 %   DateFormat: String specifying the format in which Dates are written
 
 %	Output
-%	Data: ??
+%	Data: FileNameStr => A string of the downloaded HDF5 file names. 
 
+%% Issues:
+    % Currently the code selects only the Barker code data (kindat==5963)
+    % Currently it only downloads PFISR data (Instrument Code = 61)
+    
 % Defining the URL of the Madrigal Database
 cgiurl='http://isr.sri.com/madrigal/cgi-bin/';
 
@@ -47,6 +51,7 @@ end;
 for i=1:1:d2
     fileNameStr=sprintf('DataFile_%s_%d',expFileArrayStore(i).name(27:30),i);
     result=madDownloadFile(cgiurl, expFileArrayStore(i).name,fileNameStr,'Nithin Sivadas','nithin@bu.edu','Boston University','hdf5');
+    Data(i)=fileNameStr;
 end;
 
 end
