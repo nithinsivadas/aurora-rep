@@ -48,10 +48,10 @@ expFileArray = getExperimentFilesWeb(cgiurl,expArray(i).id);
 end;
 
 % Downloading the HDF5 files of all the experiments on to the active directory.
-for i=1:1:d2
+for i=1:1:k
     fileNameStr=sprintf('DataFile_%s_%d',expFileArrayStore(i).name(27:30),i);
     result=madDownloadFile(cgiurl, expFileArrayStore(i).name,fileNameStr,'Nithin Sivadas','nithin@bu.edu','Boston University','hdf5');
-    Data(i)=fileNameStr;
+    Data(k)=cellstr(fileNameStr);
 end;
 
 end
