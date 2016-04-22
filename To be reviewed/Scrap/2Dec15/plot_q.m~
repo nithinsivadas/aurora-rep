@@ -1,0 +1,10 @@
+function [ output_args ] = plot_q( q_1,q_thd_N,nt1,nt2,altitude )
+%PLOT_Q Summary of this function goes here
+%   Detailed explanation goes here
+
+plot(log10(q_1(:,nt2)), altitude,'b'); hold on; 
+plot(log10(q_thd_N(nt1,:)),altitude,'g'); 
+xlim([0 7]);
+title(
+end
+
