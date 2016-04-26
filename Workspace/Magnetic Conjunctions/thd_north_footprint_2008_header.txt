@@ -1,0 +1,82 @@
+NASA Logo, National Aeronautics and Space Administration
+<http://spdf.gsfc.nasa.gov/>
+
+  * + Goddard Home <http://www.nasa.gov/centers/goddard/home/index.html>
+  * + Visit NASA.gov <http://www.nasa.gov/>
+
++ SPDF HOME
+
+<http://spdf.gsfc.nasa.gov/>
+	
++ DATA & ORBITS
+
+<http://spdf.gsfc.nasa.gov/data_orbits.html>
+	
++ ModelWeb at CCMC
+
+<http://ccmc.gsfc.nasa.gov/modelweb/>
+	
++ SCIENCE ENABLED
+
+<http://spdf.gsfc.nasa.gov/research.html>
+	
++ AND MORE
+
+<http://spdf.gsfc.nasa.gov/resources.html>
+
++ SSCWeb Home <http://sscweb.gsfc.nasa.gov/>
+SSCWeb
++ FEEDBACK
+
+<mailto:gsfc-spdf-support@lists.nasa.gov?Subject=Feedback%20from%20SSCWeb>
+
+	SSCWeb banner
+
+
+    SSC LOCATOR FORM
+
+
+      Standard Interface
+
+*Output is sent as generated; please allow server to complete transfer
+if full time range is desired.*
+
+
+       LOCATOR_GENERAL OUTPUT: 
+
+    User: apache
+    Date: Thu 28-Jan-2016 (028) 14:11:57
+  Status: request completed successfully
+
+
+GROUP 1    Satellite   Resolution   Factor
+            themisd        60         1
+
+           Start Time           Stop Time 
+           2008   1  0.00000    2009   1  0.00000
+
+Output the following regions:
+    North B Traced
+
+
+Perform the following magnetic field traces:
+    North trace for GEO footpoint; Output: lat, lon.
+
+Magnetic field model:
+    Internal: IGRF
+    External: Tsyganenko 89C 
+    External: Tsyganenko 89C     Kp:  3-,3,3+
+    Stop trace altitude (km):   100.00
+
+Output - File: 
+         lines per page: 0
+ 
+Formats and units:
+    Day/Time format: YYYY DDD HH:MM:SS
+    Degrees/Hemisphere format: Decimal degrees with 2 place(s).
+        Longitude 180W to 180E, latitude 90S to 90N.
+    Distance format: Earth radii with 2 place(s).
+
+themisd
+       Time       NorthBtrace GE  N BTraced
+yyyy ddd hh:mm:ss   Lat    Long    Region  
